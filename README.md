@@ -1,90 +1,69 @@
-Electric Vehicle Population Data Analysis
-This project analyzes the distribution and trends in electric vehicle (EV) usage using the Electric Vehicle Population Data. The analysis focuses on understanding popular EV brands, their models, electric range, and how user preferences have evolved over time.
+# Electric Vehicle Population Data Analysis 🚗🔋
 
-📁 Dataset
-The dataset used is:
-Electric_Vehicle_Population_Data.csv
-It includes information such as:
+This project analyzes electric vehicle (EV) data using Python, Pandas, and Matplotlib to uncover trends in EV adoption, sales, and performance — particularly focusing on brands like Tesla.
 
-Vehicle Make and Model
+---
 
-Electric Vehicle Type
+## 📁 Dataset Used
 
-Model Year
+- **Name:** Electric_Vehicle_Population_Data.csv
+- **Source:** Washington State Department of Licensing (EV registration data)
 
-Electric Range
+---
 
-and other relevant fields
+## 📊 Analysis Overview
 
-📊 Visualizations
-The script generates the following visualizations:
+The Python script performs the following:
 
-Distribution of Electric Vehicle Types (Pie Chart)
-Shows the percentage split between BEVs, PHEVs, etc.
+- Identifies the **top-selling EV brands**
+- Analyzes **Tesla model popularity and electric ranges**
+- Shows **distribution by model year**
+- Examines **Electric Vehicle Types (BEV, PHEV, etc.)**
+- Plots electric range against model year
 
-Distribution of Vehicle Model Years (Histogram)
-Displays how EV production has changed over time.
+---
 
-Number of Car Models by Brand (Bar Graph)
-Highlights how many models each brand has produced.
+## 📈 Visualizations Generated
 
-Sales Share of Different Brands (Pie Chart)
-Shows which brands dominate EV sales.
+### 1. 🔵 Pie Chart – Electric Vehicle Types
+Shows distribution of BEV, PHEV, etc.
 
-Tesla Car Models Sales (Pie Chart)
-Focused breakdown of Tesla model popularity.
+### 2. 🟠 Histogram – Model Years
+Displays how many EVs were sold in each year.
 
-Tesla Model vs. Electric Range (Bar Chart)
-Compares different Tesla models based on electric range.
+### 3. 🔵 Bar Graph – Car Models by Brand
+Counts how many models are sold by each brand.
 
-Electric Range vs. Model Year (Scatter Plot)
-Visualizes how electric range has evolved with model year.
+### 4. 🟣 Pie Chart – Sales Share of Top Brands
+Shows brands with >1200 sales and their market share.
 
-Electric Range by Make (Horizontal Bar Graph)
-Displays electric range for top-selling brands sorted in descending order.
+### 5. 🔴 Pie Chart – Tesla Model Sales
+Breakdown of how popular each Tesla model is.
 
-🔍 Key Insights
-People are increasingly preferring EVs over other types of vehicles.
+### 6. 🟤 Bar Graph – Tesla Model vs Electric Range
+Displays electric range of various Tesla models.
 
-While many renowned brands produce EVs (e.g., Audi, Hyundai, BMW), consumer choices aren't solely based on brand reputation.
+### 7. 🔴 Scatter Plot – Electric Range vs Model Year
+Visualizes how range has improved over time.
 
-Tesla is the top-selling EV brand, with Model Y and Model 3 being the most popular.
+### 8. 🔵 Horizontal Bar Graph – Electric Range by Make
+Sorted view of electric range by EV make/model.
 
-Electric range has significantly improved over the years.
+---
 
-Despite range being a key factor, consumers also consider other features before making a purchase.
+## 💡 Key Findings
 
-🧰 Requirements
-Python 3.x
+1. ⚡ **EVs are becoming increasingly preferred** over other vehicle types.
+2. 🏷️ While big brands like Audi, Hyundai, and BMW are producing EVs, **brand name alone doesn't dictate popularity**.
+3. 🚀 **Tesla dominates the EV market**, especially with **Model Y** and **Model 3**.
+4. 📈 **Electric range has increased** significantly over the years.
+5. 🔍 **Electric range isn't the only factor** influencing purchase — design, brand, and features also matter.
 
-pandas
+---
 
-matplotlib
+## 📦 How to Run
 
-You can install the required libraries using:
-
-bash
-Copy
-Edit
-pip install pandas matplotlib
-▶️ How to Run
-Place the dataset file (Electric_Vehicle_Population_Data.csv) in your working directory.
-
-Run the script using any Python IDE or from the command line:
-
-bash
-Copy
-Edit
-python ev_analysis.py
-Make sure the file path in the script points correctly to the dataset location on your machine.
-
-📎 File Structure
-Copy
-Edit
-.
-├── Electric_Vehicle_Population_Data.csv
-├── ev_analysis.py
-└── README.md
-📌 Author
-Akshaya Rajagopal
-
+1. Clone this repo or download the code:
+   ```bash
+   git clone https://github.com/your-username/ev-analysis.git
+   cd ev-analysis
